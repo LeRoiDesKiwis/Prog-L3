@@ -1,0 +1,17 @@
+5
+> sur la commande less n'a aucun sens car on va créer un fichier less plutôt qu'utiliser la commande less
+| sur un fichier n'a aucun sens car on peut pas "exécuter" un fichier
+
+ls > result | less n'a que peu d'intérêt prq je sais pas
+ls | less > result n'a que peu d'intérêt prq je sais pas
+
+7
+FOO n'existe pas car il faut l'exporter avec la commande "export", en faisant "export FOO=13"
+export BAR=15
+
+La variable BAR n'est défini que dans le shell actuel. Il faudrait la mettre .bashrc pour qu'elle soit dans toutes les consoles.
+
+10
+echo ‘Bonjour $USER‘ n'a pas de sens car il n'y a pas besoin de double-quote pour afficher une variable.
+
+

@@ -1,0 +1,5 @@
+1. | A | c | h | i | e | n | \0 | c | h | i | o | t | \0 | c | h | o | u | x
+
+strlen : fonctionne en détectant le \0 à la fin d'un string, ne peut donc pas fonctionner sur un tableau de caractère ou un seul caractère.
+
+Différence entre s1 et s2 : s1 est read-only et pas s2
