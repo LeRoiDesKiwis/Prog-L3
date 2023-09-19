@@ -15,6 +15,13 @@
 // Écrire ici la fonction mystrcpy
 // ====== TODO ==========
 
+void mystrcpy(char* dest, const char* src){
+    
+    for(int i = 0; src[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+
+}
 
 int main()
 {
@@ -45,12 +52,17 @@ int main()
 
     // recopiez la source dans cible1 avec strcpy
     // ====== TODO ==========
+    strcpy(cible1, source);
 
     // recopiez la source dans cible2 avec mystrcpy
     // ====== TODO ==========
+    mystrcpy(cible2, source);
 
     // afficher les deux résultats avec leurs longueurs
     // ====== TODO ==========
+
+    printf("Cible 1 : %s (%ld)\n", cible1, strlen(cible1));
+    printf("Cible 2 : %s (%ld)", cible2, strlen(cible2));
 
     printf("\n");
 

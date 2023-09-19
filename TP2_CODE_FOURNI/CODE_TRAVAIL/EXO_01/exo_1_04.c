@@ -15,6 +15,18 @@
 // Écrire ici la fonction mirror
 // ====== TODO ==========
 
+void mirror(char* s){
+
+    int size = strlen(s);
+
+    for(int i = 0; i < size/2; i++){
+        char a = s[i];
+        s[i] = s[size-i-1];
+        s[size-i-1] = a;
+    }
+
+}
+
 
 int main()
 {
@@ -26,6 +38,7 @@ int main()
     printf("Voici la chaîne avant retournement : \"%s\" (%ld)\n", s, strlen(s));
     // appeler ici la fonction mirror
     // ====== TODO ==========
+    mirror(s);
     printf("Voici la chaîne après retournement : \"%s\" (%ld)\n", s, strlen(s));
     
     printf("\n");

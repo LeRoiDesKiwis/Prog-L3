@@ -14,11 +14,26 @@
 
 // Écrire ici la fonction isPalin
 // ====== TODO ==========
+bool isPalin(const char* s){
 
+    int len = strlen(s);
+
+    for(int i = 0; i < len/2; i++){
+        if(s[i] != s[len-i-1]) return false;
+    }
+    return true;
+}
 
 // Écrire ici la fonction isPalinTab
 // ====== TODO ==========
 
+bool isPalinTab(const char s[], int size){
+
+    for(int i = 0; i < size/2; i++){
+        if(s[i] != s[size-i-1]) return false;
+    }
+    return true;
+}
 
 int main()
 {
@@ -33,6 +48,7 @@ int main()
     // - "02022020" i.e. le 2 février 2020
     // - "engagelejeuquejelegagne"
     // ====== TODO ==========
+    printf("%d %d\n", isPalin("etlamarinevaveniramalte"), isPalin("unephrasealeatoireetlonguejsppourquoielleestaussilonguecettephrase"));
     
     // ------------------------------------------------------------
     title_print("iPalinTab");
@@ -40,6 +56,10 @@ int main()
     // exemple 'b','a','t','e','a','u') puis avec un palindrome (par
     // exemple 'k','a','y','a','k')
     // ====== TODO ==========
+
+    char s[] = {'b', 'a', 't', 'e', 'a', 'u'};
+    char s1[] = {'k', 'a', 'y', 'a', 'k'};
+    printf("%d %d\n", isPalinTab(s, 6), isPalinTab(s1, 5));
 
     printf("\n");
 

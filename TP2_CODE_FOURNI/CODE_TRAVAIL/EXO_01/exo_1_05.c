@@ -15,6 +15,14 @@
 // Écrire ici la fonction mystrlen
 // ====== TODO ==========
 
+int mystrlen(const char* s){
+    int count = 0;
+    while(s[count] != '\0'){
+        count++;
+    }
+    return count;
+}
+
 int main()
 {
     title_print("mystrlen");
@@ -25,6 +33,8 @@ int main()
     //const char *s = "aa\n";
 
     printf("Voici la chaîne : \"%s\"\n", s);
+    printf("Strlen : %ld\n", strlen(s));
+    printf("MyStrLen : %d", mystrlen(s));
 
     // appeler ici mystrlen et strlen, et afficher le résultat
     // ====== TODO ==========

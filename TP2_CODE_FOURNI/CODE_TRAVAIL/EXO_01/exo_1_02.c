@@ -26,6 +26,7 @@ int main()
     s1 = "cheval";
     printf("s1 après : %s\n", s1);
     // Explication
+    // On modifie pas s1, on le réaffecte juste donc oui c'est bon
     // ====== TODO ==========
 
     // ------------------------------------------------------------
@@ -35,6 +36,7 @@ int main()
     // ====== TODO ==========
     // code pour réaffecter la chaîne
     // ====== TODO ==========
+    strcpy(s2, "rat");
   
     // ------------------------------------------------------------
     title_print("Modification de s2 ou *s2 (suite)");
