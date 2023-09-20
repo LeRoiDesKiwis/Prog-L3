@@ -8,15 +8,15 @@ import java.util.Collections;
 
 public class World {
 
-    private final Map<Location, Robot> robots = new HashMap<>();
+    private final Map<Location, Robot> robots;
 
     private static List<Location> ALL_LOCS = new ArrayList<>();
 
     private final List<Location> freeLocs = new ArrayList<>();
 
     static {
-        for(int x = 0; x < 10; x++){
-            for(int y = 0; y < 10; y++){
+        for(int x = -10; x < 10; x++){
+            for(int y = -10; y < 10; y++){
                 ALL_LOCS.add(new Location(x, y));
             }
         }
@@ -48,6 +48,11 @@ public class World {
     }
 
     public World(){
+        this(new HashMap<>());
+    }
+
+    public World(Map<Location, Robot> robots){
+        this.robots = new HashMap<>(robots);
         freeLocs.addAll(ALL_LOCS);
     }
 
