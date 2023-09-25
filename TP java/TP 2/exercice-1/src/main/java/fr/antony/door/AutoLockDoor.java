@@ -1,4 +1,4 @@
-package fr.leroideskiwis.door;
+package fr.antony.door;
 
 public class AutoLockDoor extends Door{
 
