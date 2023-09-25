@@ -12,7 +12,7 @@ Le dépôt est structuré comme suit :
 
 ## Contribution
 
-Vous pouvez contribuer à ce dépôt pour modifier le readme ou pour proposer des corrections sur le code. Souvenez-vous que c'est un dépôt pour des exercices, c'est pas vraiment un projet donc les contributions ici sont pas vraiment utiles, mais vous pouvez en faire si vous voulez.
+Vous pouvez contribuer à ce dépôt pour modifier le readme ou pour proposer des corrections sur le code. C'est certes un dépôt pour des exercices, mais contribuer peut m'aider à voir mes erreurs et à m'améliorer, donc n'hésitez pas !
 
 ## Licence
 
