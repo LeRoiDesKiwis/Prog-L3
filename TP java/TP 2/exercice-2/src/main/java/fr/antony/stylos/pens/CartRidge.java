@@ -12,6 +12,10 @@ public class CartRidge {
         this.level = level;
     }
 
+    public int getLevel() {
+        return this.level;
+    }
+
     public boolean hasEnoughInk(int needed){
         return level >= needed;
     }

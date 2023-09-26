@@ -25,34 +25,28 @@ class CartRidgeTest {
     @Test
     void consume() {
         cartRidge.consume(2);
-        assertEquals(getLevel(), 8, "consume 2");
+        assertEquals(cartRidge.getLevel(), 8, "consume 2");
     }
 
     @Test
     void consomeFarMore() {
         cartRidge.consume(11);
-        assertEquals(getLevel(), 0, "consume more that it has");
+        assertEquals(cartRidge.getLevel(), 0, "consume more that it has");
     }
     @Test
     void consomeNegative() {
         cartRidge.consume(-3);
-        assertEquals(getLevel(), 7, "negative consume");
+        assertEquals(cartRidge.getLevel(), 7, "negative consume");
     }
 
     @Test
     void empty() {
         cartRidge.empty();
-        assertEquals(getLevel(), 0, "empty");
+        assertEquals(cartRidge.getLevel(), 0, "empty");
     }
 
     @Test
     void colorize() {
         assertEquals(cartRidge.colorize("test"), ("("+Color.RED.toString()+" color used) test"), "colorize");
-    }
-
-    private int getLevel(){
-        String string = cartRidge.toString();
-        string = string.substring(string.indexOf("level=") + "level=".length());
-        return Integer.parseInt(string.replace("}", ""));
     }
 }
