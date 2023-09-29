@@ -5,7 +5,7 @@ import java.awt.*;
 public class CartRidge {
 
     private Color color;
-    private int level;
+    protected int level;
 
     public CartRidge(Color color, int level) {
         this.color = color;
