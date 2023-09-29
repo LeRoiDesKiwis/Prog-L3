@@ -50,15 +50,26 @@ int main()
     // et afficher cible1 avec sa longueur
     // vérifier si tout est correct et expliquer (réponse : c'est incorrect)
     // ====== TODO ==========
+    strncpy(cible1, source, LONGUEUR-1);
+    
+    printf("%ld\n", strlen(cible1));
 
     // avec avec cible2 et LONGUEUR (réponse : c'est incorrect)
     // ====== TODO ==========
+    strncpy(cible2, source, LONGUEUR);
+    printf("%ld\n", strlen(cible2));
     
     // avec avec cible3 et LONGUEUR+1 (réponse : c'est correct)
     // ====== TODO ==========
+
+    strncpy(cible3, source, LONGUEUR+1);
+    printf("%ld\n", strlen(cible3));
     
     // avec avec cible4 et LONGUEUR+2 (réponse : c'est correct)
     // ====== TODO ==========
+
+    strncpy(cible4, source, LONGUEUR+2);
+    printf("%ld", strlen(cible4));
 
     printf("\n");
 
