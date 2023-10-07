@@ -22,7 +22,6 @@ int main()
     return EXIT_SUCCESS;
 }
 
-/*
 int moins1(int n)     // définition
 {
     if (n <= 1)
@@ -38,4 +37,3 @@ int moins2(int n)     // définition
     n -= 2;
     return moins1(n);
 }
-*/

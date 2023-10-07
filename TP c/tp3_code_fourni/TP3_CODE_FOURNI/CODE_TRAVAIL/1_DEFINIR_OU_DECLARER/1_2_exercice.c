@@ -36,7 +36,7 @@ int main()
 
     // appeler afficheN pour afficher 3 fois "Bonjour"
     // ====== TODO ==========
-    afficheN(3, "Bonjour")
+    afficheN(3, "Bonjour");
     
     return EXIT_SUCCESS;
 }

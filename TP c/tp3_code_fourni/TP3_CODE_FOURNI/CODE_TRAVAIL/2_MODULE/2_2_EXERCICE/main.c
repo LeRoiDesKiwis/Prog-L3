@@ -11,6 +11,7 @@
 
 // sûrement quelque chose à faire ici
 // ====== TODO ==========
+#include "ImageMono.h"
 
 int main()
 {
@@ -18,6 +19,10 @@ int main()
     // changement de la couleur
     // affichage des caractéristiques
     // ====== TODO ==========
+    ImageMono image;
+    im_init(&image, 20, 30, "vert");
+    printf("%d %d, %s", im_largeur(&image), im_hauteur(&image), im_color(&image));
+    im_color_set(&image, "rouge");
 
     return EXIT_SUCCESS;
 }
