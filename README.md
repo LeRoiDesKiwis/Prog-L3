@@ -1,6 +1,6 @@
-# Mon Dépôt d'Exercices en C et Java
+# Mon Dépôt d'Exercices
 
-Bienvenue dans mon dépôt GitHub dédié à mes exercices et TP en langages C et Java. Ce dépôt a été créé pour organiser et partager mon travail dans ces deux langages de programmation.
+Bienvenue dans mon dépôt GitHub dédié à mes exercices et TP universitaires. Ce dépôt a été créé pour organiser et partager mon travail dans ces langages de programmation.
 
 ## Structure du Dépôt
 
@@ -9,6 +9,8 @@ Le dépôt est structuré comme suit :
 - **TP c** : Mes tps en C
 
 - **TP java** : Mes tps de java
+
+- **TP python z3** : Les tps utilisant la bibliothèque z3 (solveur SMT)
 
 ## Contribution
 
