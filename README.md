@@ -6,9 +6,7 @@ Bienvenue dans mon dépôt GitHub dédié à mes exercices et TP universitaires.
 
 Le dépôt est structuré comme suit :
 
-- **TP c** : Mes tps en C
-
-- **TP java** : Mes tps de java
+- **TP <java/c/ocaml>** : mes tps en <java/c/ocaml>
 
 - **TP python z3** : Les tps utilisant la bibliothèque z3 (solveur SMT)
 
