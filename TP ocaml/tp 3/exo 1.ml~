@@ -1,0 +1,11 @@
+let rec to_list_prefix(a : 'a t_btree) : 'a list =
+  if bt_isempty(a) then ()
+	else
+	let r ; 'a t_btree = bt_root(a) in
+  let l : ('a list) ref = ref [] in
+	(
+		l := (!l)::r
+		depth_path(bt_subleft(a));
+		depth_path(bt_subright(a));
+    !l
+	)
