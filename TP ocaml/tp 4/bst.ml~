@@ -1,0 +1,10 @@
+let bst_seek(t, v : t_btree, int) =
+  (
+    if bt_root(t) == v
+    then true
+    else if bt_root(t) > v
+    then bst_seek(bt_subleft(t), v)
+    else if bt_root(t) < v
+    then bst_seek(bt_subright(t), v)
+    
+  )
